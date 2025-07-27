@@ -1,0 +1,83 @@
+<style>
+    .all {
+        display: grid;
+        grid-template-rows: 1fr 6fr 1fr;
+        background-color: aqua;
+    }
+
+    .head {
+        background-color: rgb(176, 212, 122);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding:5px;
+        margin: 5px;
+    }
+
+    .mid {
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+
+    }
+
+    .foot {
+        background-color: greenyellow;
+        display: grid;
+        padding:5px;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .article {
+        background-color: rgb(124, 193, 124);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .img {
+        background-color: rgb(172, 121, 26);
+        padding: 5px;
+        margin: 5px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .align{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .i1,
+    .i2,
+    .i3 {
+        background-color: #f9b434;
+        padding: 30px;
+        margin: 10px;
+        
+    }
+</style>
+
+<body>
+    <div class="all">
+        <div class="head">Header</div>
+        <div class="mid">
+            <div class="article">Aside</div>
+            <div class="img">Article
+                <div class="align">
+                    <div class="i1">i1</div>
+                    <div class="i2">i2</div>
+                    <div class="i3">i3</div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">Footer</div>
+    </div>
+</body>

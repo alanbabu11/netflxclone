@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX</title>
+    <link rel="icon" href="netflix.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <style>
+        .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .font-anton {
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
+
+</head>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body class="bg-black">
+
+    <!-- navbar -->
+    <nav class="flex justify-between bg-black  items-center border-b border-white sticky top-0">
+        <!-- heading -->
+        <h1 class=" text-red-600 font-oswald p-3 text-4xl">NETFLIX</h1>
+        <div class="flex flex-row border-2 border-solid rounded-full border-red-600 w-full p-1 gap-3">
+            <!-- search icons -->
+
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#BB271A">
+                <path
+                    d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+            </svg>
+            <input placeholder="search for movies" class="outline-none bg-black text-red-600 w-full ">
+        </div>
+        <div class="text-red-600 p-3 gap-2 md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+
+
+
+
+        <div class="p-2 flex flex-row gap-2 hidden md:flex">
+            <!-- options -->
+            <h1 class="text-red-600 hover:text-red-500 hover:border-b-red-500 hover:border-b-2">Home</h1>
+            <h1 class="text-red-600 hover:text-red-500 hover:border-b-red-500 hover:border-b-2">About</h1>
+            <h1 class="text-red-600 hover:text-red-500 hover:border-b-red-500 hover:border-b-2">Movies</h1>
+        </div>
+    </nav>
+    <!-- section -->
+    <section class="p-4 flex justify-center bg-black border-b-2">
+        <div class="mt-14">
+            <h1 class="text-white font-anton text-3xl md:text-5xl mb-5 mt-14">Sign for just at $29 per month</h1>
+            <div>
+                <button
+                    class="bg-red-600 rounded-xl p-3 ml-3 hover:border-solid hover:border-2 hover:border-red-600 hover:text-red-600 hover:rounded-xl hover:bg-black mt-5">Sign-in</button>
+                <button
+                    class="border-solid border-2 border-red-600 text-red-600 rounded-xl p-3 hover:bg-red-600 hover:text-black ml-2 mb-20">Signup</button>
+            </div>
+        </div>
+        <div class="hidden md:block p-6">
+            <img src="./p.jpg" alt="img" class="w-80">
+        </div>
+
+    </section>
+
+    <div class="text-center mt-7 border-b-2 border-white">
+        <h1 class="text-3xl font-bold font-anton text-red-600">About Us</h1>
+        <p class="text-white">This is a site where you can watch movies by subscription</p>
+        <div class="md:flex md:justify-around mt-6">
+            <div class="border-2 border-solid border-red-600 m-6 p-2">
+                <h2 class="inline text-2xl font-medium text-red-600 font-anton">Weekly</h2>
+                <ul class=" text-white p-4">
+                    <li class="line-through">$29.99</li>
+                    <li>$12.00 only</li>
+                    <li>Watch upto 2 devices</li>
+                    <li>720p</li>
+                    <li>subscribe soon..</li>
+                </ul>
+            </div>
+            <div class="border-2 border-solid border-red-600 m-6">
+                <h2 class="inline text-2xl font-medium text-red-600 font-anton">Monthly</h2>
+                <ul class=" text-white p-4">
+                    <li class="line-through">$49.99</li>
+                    <li>$32.00 only</li>
+                    <li>Watch upto 4 devices</li>
+                    <li>1080p</li>
+                    <li>subscribe soon..</li>
+                </ul>
+            </div>
+            <div class="border-2 border-solid border-red-600 m-6">
+                <h2 class="inline text-2xl font-medium text-red-600 font-anton">Yearly</h2>
+                <ul class=" text-white p-4">
+                    <li class="line-through">$99.99</li>
+                    <li>$72.00 only</li>
+                    <li>Watch upto 6 devices</li>
+                    <li>4k</li>
+                    <li>subscribe soon..</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Movie cards -->
+    <div class="text-center mt-5">
+        <h1 class="text-bold font-anton text-red-600 mt-5 text-3xl">Movies</h1>
+        <div class="grid grid-cols-2 gap-5 mt-5 text-white font-oswald">
+            <div>
+                <img src="./hit3.jpg" alt="img" class="inline hover:transform hover:-translate-y-2">
+                <h1 class="text-white font-oswald">HIT : Third Case</h1>
+                <p>IMDB Rating : ⭐⭐⭐⭐</p>
+                <p>Subscribe for watching 🎥</p>
+            </div>
+            <div>
+                <img src="./rsz_dead.jpg" alt="img" class="inline hover:transform hover:-translate-y-2">
+                <h1>Deadpool 2</h1>
+                <p>IMDB Rating : ⭐⭐</p>
+                <p>Subscribe for watching 🎥</p>
+            </div>
+            <div>
+                <img src="./spidey.jpg" alt="img" class="inline hover:transform hover:-translate-y-2">
+                <h1>Spiderman Homecoming</h1>
+                <p>IMDB Rating : ⭐⭐⭐⭐</p>
+                <p>Subscribe for watching 🎥</p>
+            </div>
+            <div>
+                <img src="./money.jpg" alt="img" class="inline hover:transform hover:-translate-y-2">
+                <h1>Money Heist : Season 3</h1>
+                <p>IMDB Rating : ⭐⭐⭐⭐⭐</p>
+                <p>Subscribe for watching 🎥</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</body>
+
+</html>
